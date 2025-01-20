@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <title>Instruction</title>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  background-color: #DFF2EB;
+}
+
+
+
+
+
+
+
+/* headline */
+
+.headline {
+    margin-top: 50px;
+    margin-left: 25%;
+   /* font-style: italic; */
+    width: 50%;
+}
+
+@media screen and (max-width: 800px) {
+  .headline {
+    margin-left: 50px;
+    width: 80%;
+  }
+
+  h2 {
+    margin-top: 20px;
+  }
+}
+  
+
+
+h2 {
+    margin-top: 50px;
+}
+p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+li {
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.last {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+img {
+    height: 500px;
+    width: 700px;
+}
+
+
+img.photo {
+    height: 100%;
+    width: 100%;
+}
+
+li span {
+    font-weight: bold;
+}
+
+.csc {
+    font-size: large;
+    font-weight: bold;
+}
+
+.cscphoto {
+    height: 50%;
+    width: 50%;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+</style>
+</head>
+
+<body>
+
+
+
+
+ <!-- headline -->
+
+ <div class="headline">
+<div>
+    <h1>Download Instruction</h1>
+    <p>Follow these steps to purchase and download your eBook smoothly:</p>
+    <h2>1. Select Your eBook</h2>
+    <p>
+        <ul>
+            <li>Click the <span>"Buy Now"</span> button for the eBook you want to purchase.</li>
+        </ul>
+    </p>
+    <h2>2. You will be directed to the checkout page</h2>
+    <p>
+        <ul>
+            <li>Locate the <span>"Proceed to Payment"</span> button and click it.</li>
+        </ul>
+    </p>
+    <img src="./checkout.gif" class="photo">
+
+    <h2>3. Choose Your Payment Method</h2>
+    <p>
+        <ul>
+            <li>You can pay using <span>PayPal</span> or a <span>Debit/Credit Card</span>.</li>
+            <li>For this example, select the <span>Debit/Credit Card</span> button.</li>
+        </ul>
+    </p>
+    <img src="./paymentpage.gif" class="photo">
+
+    <h2>4. Enter Your Payment Information</h2>
+    <p>
+        <ul>
+            <li>Fill in the required details, including your card information.</li>
+            <li>Make sure to select the correct <span>country</span> from the dropdown menu.</li>
+        </ul>
+    </p>
+    <img src="./creditcard.gif" alt="" class="photo">
+
+   
+    <h2>5. Card Security Code (CSC)</h2>
+    <p>A card security code (CSC), also known as CVC, CVV, or CCV, is a series of numbers printed on your credit or debit card. It adds an extra layer of security for transactions.</p>
+    <img src="./csc.gif" alt="" class="photo">
+    <p class="csc">Where to Find Your Card Security Code</p>
+    <p>
+        <ul>
+            <li><span>Visa, Mastercard, and most cards:</span> A three-digit number on the back of the card near the signature panel.</li>
+            <img src="./cc.jpg" alt="" class="cscphoto">
+            <li><span>American Express:</span> A four-digit number on the front of the card above the card number.</li>
+            <img src="./ae.jpg" alt="" class="cscphoto">
+        </ul>
+    </p>
+
+    <h2>6. Complete the Payment</h2>
+    <p>
+        <ul>
+            <li>After successfully completing your payment, you will be directed to a confirmation page.</li>
+        </ul>
+    </p>
+
+    <h2>7. Click "Return to Merchant"</h2>
+    <p>
+        <ul>
+            <li>On the confirmation page, click the <span>"Return to Merchant"</span> button. This will take you to the download page.</li>
+        </ul>
+    </p>
+    <img src="./returntomerchant.gif" alt="" class="photo">
+
+    <h2>8. Download Your eBook</h2>
+    <p>
+        <ul>
+            <li>On the download page, click the <span>Download</span> button to open your eBook.</li>
+            
+        </ul>
+    </p>
+    <img src="./downloadpage.gif" alt="" class="photo">
+</div>
+<br>
+<br>
+<br>
+<hr>
+<div class="last">
+    <ul>
+        
+        <li>Copyright © eBooks4sale. All rights reserved.</li>
+    </ul>
+</div>
+
+</div>
+
+
+
+
+
+<script>
+
+  hamburger = document.querySelector(".hamburger");
+  hamburger.onclick = function() {
+      topNav = document.querySelector(".topnav2");
+      topNav.classList.toggle("active");
+  }
+
+
+      function myFunction() {
+        var x = document.getElementById("myTopnav2");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+      </script>
+
+
+
+</body>
+</html>
