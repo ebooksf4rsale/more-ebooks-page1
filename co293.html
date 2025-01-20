@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <title>Payment</title>
+
+<style>
+
+body {
+    margin: 50px 50px 0 50px;
+    display: flex;
+    flex-direction: column;
+    min-height: 95vh;
+    font-family: "Open Sans", sans-serif;
+
+}
+
+.main{
+    display: flex;
+}
+
+.box1{
+    float: left;
+    width: 25%;
+    background-color: #e4e8eb;
+    padding: 50px;
+    margin-left: 15%;
+   
+}
+
+
+.box2{
+    display: inline-block;
+    width: 25%;
+    background-color: #f0f0f0;
+    padding: 50px;
+    margin-bottom: 50px;
+    
+     
+}
+
+
+ol.nobullets{
+    /* list-style-type: none; */
+    margin: 0;
+    padding: 0;
+    margin-left: 20px;
+}
+
+li span {
+    font-weight: bold;
+}
+
+.btn {
+    padding: 0px 10px;
+    background-color: gold;
+    text-decoration: none;
+    border-radius: 20px;
+    margin-top: 5px;
+    color: black;
+    font-size: 15px;
+    margin-bottom: 35px;
+    font-weight: bold;
+}
+
+.btn1 {
+    padding: 8px 32px;
+    background-color: gold;
+    text-decoration: none;
+    border-radius: 20px;
+    /* margin-top: 50px; */
+    color: black;
+    font-size: 15px;
+    margin-bottom: 500px;
+    font-weight: bold;
+}
+
+.box2 p {
+    margin-bottom: 30px;
+}
+
+.box2 span {
+    font-weight: bold;
+}
+
+
+
+
+@media (max-width: 1000px) {
+    .box1{
+        margin-left: 10%;
+        
+    }
+
+    .box2{
+        width: 35%;
+       
+    }
+
+}
+
+
+@media (max-width: 800px){
+
+    h1 {
+    font-size: 2.5rem;
+    
+    }
+
+   
+
+    .box1 {
+        width: 80%;
+        /* margin-bottom: 30px; */
+        text-align: inline;
+        display: block;
+        margin-left: 0px;
+
+        
+    }
+    .box2{
+       width: 80%;
+        
+    }
+}
+
+
+@media (max-width: 400px){
+    .btn1 {
+        padding: 8px 20px;
+        
+    }
+    
+}
+
+
+
+</style>
+</head>
+<body>
+
+    
+
+
+    <div class="main">
+        <div>
+        <div class="box1">
+            <h2>Important Reminder</h2>
+            <div>
+               <p>
+                <ol class="nobullets">
+                    <li>After completing your payment, please make sure to click <span>"Return to Merchant"</span> to access your eBook download page. This step is essential to retrieve your eBook immediately.</li>
+                    <br>
+                    <li>If you'd like to download it later, still click <span>"Return to Merchant"</span> after payment to be taken to the download page. From there, you can save the <span>URL</span> of the download page to access your eBook at a later time.</li>
+                    <br>
+                    <li>Please click <a href="./instruction.html" class="btn">view</a> to see detailed download instructions and ensure a smooth experience.</li>
+                </ol>
+               </p>
+            </div>
+           
+
+          </div>
+
+        <div class="box2">
+            <h2>Order Details</h2>
+           
+            <p>Brainwashed</p>
+            
+            <p>Total: <span>&#36;5</span> USD</p>
+            <a href="https://www.paypal.com/ncp/payment/7RYCHSURJJD74" class="btn1">Proceed to Payment</a>
+            
+        </div>
+
+       </div>
+    </div>
+
+
+</body>
+</html>
