@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <title>Instruction</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 
+<title>Download Instruction</title>
 <style>
+
 
 * {
     margin: 0;
@@ -18,11 +18,197 @@ body {
   margin: 0;
   font-family: "Open Sans", sans-serif;
   background-color: #DFF2EB;
+  
+
+}
+
+img {
+  width: 250px;
+  height: 400px;
+}
+
+
+/* nav bar start */
+
+.nav {
+    width: 100%;
+    height: 80px;
+    background-color: #B9E5E8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+    position: relative;
+    
+}
+
+.logo {
+    margin: -5;
+    margin-left: 50px;
+    font-size: 20px;
+    
+}
+
+/* topnav start */
+.topnav {
+display: flex;
+overflow: hidden;
+margin-right: 50px;
+
+
+}
+
+.topnav a {
+  
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+  
+}
+
+.nav .topnav a:hover {
+  background-color: white;
+  border-radius: 32px;
+  padding: 14px 16px;
+}
+
+.nav .topnav a.active {
+  color: #333;
+  background-color: white;
+  border-radius: 32px;
+ 
+}
+
+/* topnav end */
+
+/* topnav2 start*/
+
+.topnav2 {
+    display: none;
+}
+
+
+/* topnav2 end*/
+
+
+.hamburger {
+    display: none;
 }
 
 
 
+@media screen and (max-width: 900px) {
+    .logo {
+        margin-left: 70px;
+    }
 
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        background-color: white;
+        border-radius: 10px;
+        padding: 8px 10px;
+        margin-right: 60px;
+    }
+
+    .hamburger .line {
+        width: 30px;
+        height: 3px;
+        background-color: black;
+        margin: 6px 0px;
+       
+    }
+
+    .topnav {
+       display: none;
+        
+    }
+
+   
+/* topnav2 start*/
+
+.topnav2 {
+        height: 0;
+        top: 0px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background: #F3F3E0;
+        margin-left: 0px;
+        overflow: hidden;
+        display: block;
+        z-index: 1;
+        position: relative;
+        
+
+
+}
+
+.topnav2 a {
+  
+    display: block;
+    width: fit-content;
+    margin: 10px auto 0 auto;
+    text-align: center;
+    margin-bottom: 10px;
+    overflow: 0;      
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+  
+}
+
+.topnav2 a:hover {
+  background-color: #ddd;
+  border-radius: 32px;
+  padding: 14px 16px;
+  color: black;
+}
+
+.topnav2 a.active {
+  color: #333;
+  background-color: white;
+  border-radius: 32px;
+ 
+}
+
+.topnav2.active {
+        height: 380px;
+    }
+
+/* topnav2 end*/
+
+
+}
+
+@media screen and (max-width: 400px) {
+    .logo {
+        margin-left: 50px;
+    }
+
+    .hamburger {
+        margin-right: 50px;
+    }
+
+}
+
+
+/* logo start */
+
+.log1 {
+    /* background-color: #4A628A; */
+    color: white;
+}
+
+
+/* logo end*/
+
+/* nav bar end */
 
 
 
@@ -33,185 +219,289 @@ body {
     margin-left: 25%;
    /* font-style: italic; */
     width: 50%;
+   
 }
 
-@media screen and (max-width: 800px) {
-  .headline {
-    margin-left: 50px;
-    width: 80%;
-  }
 
-  h2 {
-    margin-top: 20px;
-  }
-}
   
+.headline h1 {
+    font-size: 2rem;
+    font-style: italic;
+}
 
 
-h2 {
-    margin-top: 50px;
-}
-p {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    
-}
+
 
 li {
     margin-top: 20px;
     margin-left: 30px;
 }
 
-.last {
-    margin-top: 20px;
-    margin-bottom: 50px;
-}
 
-img {
+
+/* img {
     height: 500px;
     width: 700px;
-}
+} */
 
 
-img.photo {
-    height: 100%;
-    width: 100%;
-}
+
 
 li span {
     font-weight: bold;
 }
 
-.csc {
-    font-size: large;
-    font-weight: bold;
+
+/* my menu */
+#myMenu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
-.cscphoto {
-    height: 50%;
-    width: 50%;
-    margin-top: 20px;
-    margin-left: 50px;
+#myMenu li {
+    margin-bottom: 50px;
+    display: inline-block;
+    margin-right: 30px;
+    font-size: 18px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    
+    
 }
+
+
+
+
+
+.ephoto {
+  width: 80%;
+  height: 80%;
+ 
+ 
+}
+
+.ephoto img{
+  width: 100%;
+ height: 100%;
+
+}
+
+.ephoto p{
+  margin-top: 10px;
+  
+}
+
+
+@media screen and (max-width: 800px) {
+  .headline {
+    margin-left: 8%;
+    margin-right: 8%;
+    width: 80%;
+  }
+
+ 
+}
+
+
+@media screen and (max-width: 600px) {
+  
+  .headline {
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+
+
+  .ephoto img {
+    width: 80%;
+    height: 80%;
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+  
+  .headline {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+
+
+  
+}
+
+
+
+
+
+
 </style>
 </head>
 
 <body>
 
-
+    <div class="nav">
+        <div class="logo">
+                <h2><span class="log1">eBooks</span><span class="log2">4sale</span></h2>
+               
+        </div>
+        
+    
+    
+        <div class="topnav" id="myTopnav">
+         
+         
+        </div>
+        </div>
+    
+        
+    
 
 
  <!-- headline -->
 
- <div class="headline">
-<div>
-    <h1>Download Instruction</h1>
-    <p>Follow these steps to purchase and download your eBook smoothly:</p>
-    <h2>1. Select Your eBook</h2>
-    <p>
-        <ul>
-            <li>Click the <span>"Buy Now"</span> button for the eBook you want to purchase.</li>
-        </ul>
-    </p>
-    <h2>2. You will be directed to the checkout page</h2>
-    <p>
-        <ul>
-            <li>Locate the <span>"Proceed to Payment"</span> button and click it.</li>
-        </ul>
-    </p>
-    <img src="./checkout.gif" class="photo">
+<!-- headline -->
 
-    <h2>3. Choose Your Payment Method</h2>
-    <p>
-        <ul>
-            <li>You can pay using <span>PayPal</span> or a <span>Debit/Credit Card</span>.</li>
-            <li>For this example, select the <span>Debit/Credit Card</span> button.</li>
-        </ul>
-    </p>
-    <img src="./paymentpage.gif" class="photo">
 
-    <h2>4. Enter Your Payment Information</h2>
-    <p>
-        <ul>
-            <li>Fill in the required details, including your card information.</li>
-            <li>Make sure to select the correct <span>country</span> from the dropdown menu.</li>
-        </ul>
-    </p>
-    <img src="./creditcard.gif" alt="" class="photo">
 
-   
-    <h2>5. Card Security Code (CSC)</h2>
-    <p>A card security code (CSC), also known as CVC, CVV, or CCV, is a series of numbers printed on your credit or debit card. It adds an extra layer of security for transactions.</p>
-    <img src="./csc.gif" alt="" class="photo">
-    <p class="csc">Where to Find Your Card Security Code</p>
-    <p>
-        <ul>
-            <li><span>Visa, Mastercard, and most cards:</span> A three-digit number on the back of the card near the signature panel.</li>
-            <img src="./cc.jpg" alt="" class="cscphoto">
-            <li><span>American Express:</span> A four-digit number on the front of the card above the card number.</li>
-            <img src="./ae.jpg" alt="" class="cscphoto">
-        </ul>
-    </p>
+<div class="headline">
+    
+<!-- start -->
 
-    <h2>6. Complete the Payment</h2>
-    <p>
-        <ul>
-            <li>After successfully completing your payment, you will be directed to a confirmation page.</li>
-        </ul>
-    </p>
+<div class="page">
+  
+    <ul id="myMenu" class="nobullets">
+      <li>
+        <div class="ephoto">
+        <h1>Download Instruction</h1>
+        <p>Follow these steps to purchase and download your eBook smoothly:</p>
+      </div>
+      </li>
+     
 
-    <h2>7. Click "Return to Merchant"</h2>
-    <p>
-        <ul>
-            <li>On the confirmation page, click the <span>"Return to Merchant"</span> button. This will take you to the download page.</li>
-        </ul>
-    </p>
-    <img src="./returntomerchant.gif" alt="" class="photo">
-
-    <h2>8. Download Your eBook</h2>
-    <p>
-        <ul>
-            <li>On the download page, click the <span>Download</span> button to open your eBook.</li>
+      <li>
+        <div class="ephoto">
+            <img src="https://ebooksf4rsale.github.io/download-instruction/i01.png" alt="">
+            <p class="name">Click the <span>"Buy Now"</span> button for the eBook you want to purchase.</p>
             
-        </ul>
-    </p>
-    <img src="./downloadpage.gif" alt="" class="photo">
-</div>
-<br>
-<br>
-<br>
-<hr>
-<div class="last">
-    <ul>
+            
+        </div>
+       
+      </li>
+
+      <li>
+        <div class="ephoto">
+          <img src="https://ebooksf4rsale.github.io/download-instruction/i02.png" alt="">
+          <p class="name">Locate the <span>"Proceed to Payment"</span> button and click it.</p>
+          
+      </div>
+      </li>
+
+      <li>
+        <div class="ephoto">
+          <img src="https://ebooksf4rsale.github.io/download-instruction/i03.png" alt="">
+          <p class="name">You can pay using <span>PayPal</span> or a <span>Debit/Credit Card</span>.</p>
+          <p class="name">For this example, select the <span>Debit/Credit Card</span> button.</p>
+          
+      </div>
+      </li>
+
+      <li>
+        <div class="ephoto">
+          <img src="https://ebooksf4rsale.github.io/download-instruction/i04.png" alt="">
+          <p class="name">Fill in the required details, including your card information.</p>
+          <p class="name">Make sure to select the correct <span>country</span> from the dropdown menu.</p>
+          
+      </div>
+      </li>
+
+      <li>
+        <div class="ephoto">
+          <img src="https://ebooksf4rsale.github.io/download-instruction/i05.png" alt="">
+          <p class="name">A card security code (CSC), also known as CVC, CVV, or CCV, is a series of numbers printed on your credit or debit card. It adds an extra layer of security for transactions.</p>
+          <p class="name">Where to Find Your Card Security Code?</p>
+          
+      </div>
+      </li>
+
+
+      <li>
+        <div class="ephoto">
+          <img src="https://ebooksf4rsale.github.io/download-instruction/i06.png" alt="">
+          <p class="name"><span>Visa, Mastercard, and most cards:</span> A three-digit number on the back of the card near the signature panel.</p>
+          <p class="name"></p>
+          
+      </div>
+      </li>
+
+      <li>
+        <div class="ephoto">
+          <img src="https://ebooksf4rsale.github.io/download-instruction/i07.png" alt="">
+          <p class="name"><span>American Express:</span> A four-digit number on the front of the card above the card number.</p>
+          <p class="name"></p>
+          
+      </div>
+      </li>
+
+      <li>
+        <div class="ephoto">
+          <img src="https://ebooksf4rsale.github.io/download-instruction/i08.png" alt="">
+          <p class="name">After successfully completing your payment, you will be directed to a confirmation page.</p>
+          <p class="name">On the confirmation page, click the <span>"Return to Merchant"</span> button. This will take you to the download page.</p>
+          
+      </div>
+      </li>
+
+      <li>
+        <div class="ephoto">
+          <img src="https://ebooksf4rsale.github.io/download-instruction/i09.png" alt="">
+          <p class="name">On the download page, click the <span>Download</span> button to open your eBook.</p>
+          <p class="name"></p>
+          
+      </div>
+      </li>
+
+      <li>
+        <div class="ephoto">
+          <p>Copyright © eBooks4sale. All rights reserved.</p>
         
-        <li>Copyright © eBooks4sale. All rights reserved.</li>
-    </ul>
-</div>
 
-</div>
+        </div>
+      </li>
+
+  
+</ul>
 
 
+    </div>
+  </div>
 
+  <!-- end -->
 
 
 <script>
 
-  hamburger = document.querySelector(".hamburger");
-  hamburger.onclick = function() {
-      topNav = document.querySelector(".topnav2");
-      topNav.classList.toggle("active");
-  }
-
-
-      function myFunction() {
-        var x = document.getElementById("myTopnav2");
-        if (x.style.display === "none") {
-          x.style.display = "block";
-        } else {
-          x.style.display = "none";
+    hamburger = document.querySelector(".hamburger");
+    hamburger.onclick = function() {
+        topNav = document.querySelector(".topnav2");
+        topNav.classList.toggle("active");
+    }
+  
+  
+        function myFunction() {
+          var x = document.getElementById("myTopnav2");
+          if (x.style.display === "none") {
+            x.style.display = "block";
+          } else {
+            x.style.display = "none";
+          }
         }
-      }
-      </script>
+        </script>
+  
+
+
+
 
 
 
